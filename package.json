@@ -1,0 +1,28 @@
+{
+  "name": "flutter-appium",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "parallel": "npx wdio resources/conf/wdio-bstack-parallel.conf.js",
+    "single": "npx wdio resources/conf/wdio-bstack-single.conf.js",
+    "test": "npx wdio resources/conf/wdio-bstack-single.conf.js",
+    "generate-report": "./node_modules/allure-commandline/bin/allure generate allure-results --clean && ./node_modules/allure-commandline/bin/allure open"
+  },
+  "keywords": [],
+  "author": "Abhi Singh",
+  "license": "ISC",
+  "devDependencies": {
+    "@rpii/wdio-html-reporter": "^6.3.1",
+    "@wdio/allure-reporter": "^7.0.1",
+    "@wdio/cli": "^6.12.0",
+    "@wdio/mocha-framework": "^6.11.0",
+    "@wdio/spec-reporter": "^6.11.0",
+    "allure-commandline": "^2.13.8",
+    "appium-flutter-driver": "^0.0.29",
+    "appium-flutter-finder": "^0.0.22",
+    "chai": "4.3.3",
+    "lodash": "4.17.21",
+    "webdriverio": "7.2.2"
+  }
+}
