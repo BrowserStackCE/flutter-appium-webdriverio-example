@@ -10,7 +10,7 @@ var overrides = {
     maxInstances: 2,
     "browserstack.debug": true,
     automationName: "Flutter",
-    app: "<APP-URL>",
+    app: process.env.BROWSERSTACK_APP_ID,
     name:
       require("minimist")(process.argv.slice(2))["bstack-session-name"] ||
       "default_name",
