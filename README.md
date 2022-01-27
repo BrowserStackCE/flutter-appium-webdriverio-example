@@ -142,6 +142,27 @@ In this section, we will run the tests in parallel on a single browser on Browse
 
   - Note: By default, this execution would run maximum 5 test threads in parallel on BrowserStack. Refer to the section ["Configuring the maximum parallel test threads for this repository"](#Configuring-the-maximum-parallel-test-threads-for-this-repository) for updating the parallel thread count based on your requirements.
 
+### Run the Camera Injection test on a BrowserStack device
+
+In this section, we will run the camera injection test ion an android device on Browserstack. Refer to `capabilities` object in `./resources/conf/wdio-bstack-flutterAndroid.conf.js` file to change test capabilities for this configuration.
+
+  ## Prerequisites
+
+  - Upload Camera Injection APK (placed in `./resources/app/app-debug.apk`) using the [Upload Apps Functionality](https://www.browserstack.com/docs/app-automate/appium/upload-app-from-filesystem) .
+  - Upload desired image (placed in `./resources/images/instagram-logo.png`) using cURL command as described in the link:  [Test Camera image capture and QR/Barcode scanning](https://www.browserstack.com/docs/app-automate/appium/advanced-features/camera-image-injection) .
+
+- How to run the test?
+
+  To run the test on an android device, use the following command:
+
+  ```sh
+  npm run Android  
+  ```
+
+- Output
+
+  This run profile executes the camera injection test on an android device. Please refer to your [BrowserStack App Automate dashboard](https://app-automate.browserstack.com/) for test results.
+
 ## Generating Allure Reports
 
 - Generate Report using the following command: `npm run generate-report`
@@ -155,3 +176,4 @@ In this section, we will run the tests in parallel on a single browser on Browse
 - [Using Automate REST API](https://www.browserstack.com/automate/rest-api) to access information about your tests via the command-line interface
 - Understand how many parallel sessions you need by using our [Parallel Test Calculator](https://www.browserstack.com/automate/parallel-calculator?ref=github)
 - For testing public web applications behind IP restriction, [Inbound IP Whitelisting](https://www.browserstack.com/local-testing/inbound-ip-whitelisting) can be enabled with the [BrowserStack Enterprise](https://www.browserstack.com/enterprise) offering
+- For testing flutter app refer the pre-requisites in the following link, [Test Flutter apps](https://www.browserstack.com/docs/app-automate/appium/test-hybrid-apps/test-flutter-apps?utm_source=beamer&utm_medium=standalone&utm_campaign=Test-Flutter-apps-with-our-Appium-Flutter-Driver-Integration&utm_content=ctalink#nodejs)
