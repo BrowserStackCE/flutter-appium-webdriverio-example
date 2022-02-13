@@ -8,7 +8,7 @@ exports.config = {
   bail: 0,
   waitforTimeout: 10000,
   connectionRetryTimeout: 120000,
-  connectionRetryCount: 3,
+  connectionRetryCount: 1,
   framework: "mocha",
   reporters: [
     [
