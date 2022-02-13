@@ -15,8 +15,8 @@ var overrides = {
       os_version: "11.0",
       realMobile: 'true',
       device: "Samsung Galaxy S21",
-      app: "bs://<app_id_camera_injection>", //pass the app_url for camera_injection apk placed under /resources/app directory
-      "browserstack.uploadMedia":['media://<media_url>'], //pass the media_url for .png file placed under /resources/image directory
+      app: "bs://<app_id_camera_injection>", //pass the app_url or custom id of the uploaded app on BrowserStack. Note: For camera_injection, sample apk for app upload is placed under /resources/app directory
+      "browserstack.uploadMedia":['media://<media_url>'], //pass the media_url or custom id of the .png file. Note: For camera_injection, sample media file is placed under /resources/image directory 
       "browserstack.enableCameraImageInjection" : true,
       autoGrantPermissions: true,
      noReset: false,
