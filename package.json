@@ -7,6 +7,8 @@
     "parallel": "npx wdio resources/conf/wdio-bstack-parallel.conf.js",
     "single": "npx wdio resources/conf/wdio-bstack-single.conf.js",
     "test": "npx wdio resources/conf/wdio-bstack-single.conf.js",
+    "browser": "npx wdio resources/conf/single.conf.js",
+    "Android": "npx wdio resources/conf/wdio-bstack-flutterAndroid.conf.js",
     "generate-report": "./node_modules/allure-commandline/bin/allure generate allure-results --clean && ./node_modules/allure-commandline/bin/allure open"
   },
   "keywords": [],
@@ -21,9 +23,9 @@
     "@wdio/spec-reporter": "^7.10.0",
     "allure-commandline": "^2.13.8",
     "appium-flutter-driver": "^0.0.29",
-    "appium-flutter-finder": "^0.0.22",
+    "appium-flutter-finder": "^0.1.0",
     "chai": "4.3.3",
     "lodash": "4.17.21",
-    "webdriverio": "7.2.2"
+    "webdriverio": "^7.2.2"
   }
 }
